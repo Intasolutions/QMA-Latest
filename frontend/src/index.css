@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+/* index.css */
+.sponsors-section {
+  height: 500px;
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+}
+
+.sponsor-card img {
+  border-radius: 50%;
+}
+
+.sponsors-wrapper {
+  min-height: 500px;
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+}
+@keyframes gradient-x {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 3s ease infinite;
+}
+.page-transition__red,
+.page-transition__black {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: left;
+  z-index: 999;
+}
+
+.page-transition__red {
+  background-color: red;
+}
+
+.page-transition__black {
+  background-color: black;
+}
+
+.transition__logo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.image2 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 998;
+}
+/* Hide only vertical scrollbar (but keep scroll working) */
+.custom-scrollbar-y::-webkit-scrollbar {
+  width: 0px;   /* Chrome, Safari */
+}
+.custom-scrollbar-y {
+  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: none;     /* Firefox */
+}
