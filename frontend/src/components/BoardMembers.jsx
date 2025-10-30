@@ -10,13 +10,13 @@ const boardMembers = [
   { name: "Mathew Easso", role: "Director", photo: "/Team/t8.png" },
   { name: "Joseph Abraham", role: "Director", photo: "/Team/t9.png" },
   { name: "Ram Krishna", role: "Director", photo: "/Team/t6.png" },
-  { name: "John Varghese", role: "Director", photo: "/Team/t4.png" },
+  // { name: "John Varghese", role: "Director", photo: "/Team/t4.png" },
 
   // Executives
   { name: "Mathew Pulikunnel", role: "President", photo: "/Team/t1.png" },
   { name: "Biju Krishnan", role: "Vice President", photo: "/Team/t3.png" },
   { name: "John Joy", role: "Treasurer", photo: "/Team/t2.png" },
-  { name: "Cissy", role: "Executive", photo: "/Team/t5.png" },
+  // { name: "Cissy", role: "Executive", photo: "/Team/t5.png" },
 ];
 
 export default function BoardSection() {

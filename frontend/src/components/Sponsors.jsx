@@ -8,10 +8,10 @@ const sponsors = [
   { id: 1, image: "/sponsor/S-1.png", badge: "Mega Sponsor" },
   { id: 2, image: "/sponsor/s-7.png", badge: "Mega Sponsor" },
 { id: 6, image: "/sponsor/s-6.png", badge: "Gold Sponsor" },
-
+  { id: 5, image: "/sponsor/S-1.1.png", badge: "Gold Sponsor" },
   { id: 3, image: "/sponsor/s-2.png", badge: "Gold Sponsor" },
   { id: 4, image: "/sponsor/S-3.1.png", badge: "Gold Sponsor" },
-  { id: 5, image: "/sponsor/S-1.1.png", badge: "Gold Sponsor" },
+
   
   { id: 7, image: "/sponsor/s-7.1.png", badge: "Gold Sponsor" },
   { id: 8, image: "/sponsor/S-8.png", badge: "Bronze Sponsor" },
@@ -141,7 +141,7 @@ export default function Sponsors() {
 <img
   src={sponsor.image}
   alt={sponsor.badge}
-  className="w-[600px] h-[400px] object-contain rounded-2xl shadow-lg transition-transform duration-500 hover:scale-105"
+  className="w-[900px] h-[400px] object-fit  rounded-2xl shadow-lg transition-transform duration-500 hover:scale-105"
 />
 
             </div>

@@ -104,7 +104,7 @@ export default function Hero() {
 
 <div className="relative w-[350px] h-[220px] sm:w-[500px] sm:h-[320px] md:w-[700px] md:h-[450px] rounded-[40%_60%_40%_60%] overflow-hidden">
   <img
-    src="/belleville.png"
+    src="/hero-new.jpg"
     alt="Belleville Ontario"
     className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
   />
