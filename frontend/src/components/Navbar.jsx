@@ -48,7 +48,7 @@ export default function Navbar() {
   }, [menuOpen]);
 
   return (
-    <nav className="bg-white shadow-md fixed top-0 w-full z-50 overflow-x-hidden">
+    <nav className="bg-white shadow-md absolute top-0 w-full z-50 overflow-x-hidden">
       <div className="container mx-auto flex justify-between items-center py-3 sm:py-4 px-4 sm:px-6 md:px-8">
         {/* Logo */}
 <Link to="/" onClick={() => setMenuOpen(false)}>

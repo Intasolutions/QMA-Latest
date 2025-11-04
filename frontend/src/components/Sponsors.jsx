@@ -5,19 +5,17 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const sponsors = [
-  { id: 1, image: "/sponsor/S-1.png", badge: "Mega Sponsor" },
-  { id: 2, image: "/sponsor/s-7.png", badge: "Mega Sponsor" },
-{ id: 6, image: "/sponsor/s-6.png", badge: "Gold Sponsor" },
-  { id: 5, image: "/sponsor/S-1.1.png", badge: "Gold Sponsor" },
-  { id: 3, image: "/sponsor/s-2.png", badge: "Gold Sponsor" },
-  { id: 4, image: "/sponsor/S-3.1.png", badge: "Gold Sponsor" },
-
-  
-  { id: 7, image: "/sponsor/s-7.1.png", badge: "Gold Sponsor" },
-  { id: 8, image: "/sponsor/S-8.png", badge: "Bronze Sponsor" },
-  { id: 9, image: "/sponsor/s-4.png", badge: "Bronze Sponsor" },
-  { id: 10, image: "/sponsor/s-10.png", badge: "Bronze Sponsor" },
-  { id: 11, image: "/sponsor/S-11.png", badge: "Bronze Sponsor" },
+  { id: 1, image: "/sponsor/S1.png", badge: "Mega Sponsor" },
+  { id: 2, image: "/sponsor/S2.png", badge: "Mega Sponsor" },
+  { id: 6, image: "/sponsor/S3.png", badge: "Gold Sponsor" },
+  { id: 5, image: "/sponsor/S4.png", badge: "Gold Sponsor" },
+  { id: 3, image: "/sponsor/S5.png", badge: "Gold Sponsor" },
+  { id: 4, image: "/sponsor/S6.png", badge: "Gold Sponsor" },
+  { id: 7, image: "/sponsor/S7.png", badge: "Gold Sponsor" },
+  { id: 8, image: "/sponsor/S8.png", badge: "Bronze Sponsor" },
+  { id: 9, image: "/sponsor/S9.png", badge: "Bronze Sponsor" },
+  { id: 10, image: "/sponsor/S10.png", badge: "Bronze Sponsor" },
+  { id: 11, image: "/sponsor/S11.png", badge: "Bronze Sponsor" },
 ];
 
 export default function Sponsors() {
@@ -141,7 +139,7 @@ export default function Sponsors() {
 <img
   src={sponsor.image}
   alt={sponsor.badge}
-  className="w-[900px] h-[400px] object-fit  rounded-2xl shadow-lg transition-transform duration-500 hover:scale-105"
+  className="w-[900px] h-[600px] object-fit  rounded-2xl shadow-lg transition-transform duration-500 hover:scale-105"
 />
 
             </div>
