@@ -13,7 +13,7 @@ export default function GalleryMainPage() {
   const [eventFilter, setEventFilter] = useState("All");
 
   useEffect(() => {
-    fetch("http://15.157.67.144/api/gallery/")
+    fetch("/api/gallery/")
       .then((res) => res.json())
       .then((data) => {
         const items = data.results || data || [];

@@ -11,7 +11,7 @@ export default function GallerySlider() {
 
   // Fetch latest 5 gallery images from backend
   useEffect(() => {
-    fetch("http://15.157.67.144/api/gallery/")
+    fetch("/api/gallery/")
       .then((res) => res.json())
       .then((data) => {
         const items = data.results || data;
@@ -135,7 +135,7 @@ export default function GallerySlider() {
         className="absolute bottom-6 sm:bottom-8 md:bottom-10 left-1/2 -translate-x-1/2 z-50 pointer-events-auto"
       >
         <a
-          href="/gallery"
+          href="/GalleryMain"
           className="bg-[#2D6A4F] text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full font-semibold text-base sm:text-lg shadow-lg hover:bg-[#1B4332] transition-all duration-150"
         >
           View Full Gallery →

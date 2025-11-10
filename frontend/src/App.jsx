@@ -10,6 +10,7 @@ import { DialogProvider } from "./components/DialogContext";
 import GlobalDialog from "./components/GlobalDialog";
 import Loader from "./components/Loader";
 import AdminDashboard from "./Admin/AdminDashboard";
+import UrlModalBridge from'./components/UrlModalBridge'
 
 function AppContent() {
   const location = useLocation();
@@ -27,6 +28,7 @@ function AppContent() {
           <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="/Admin" element={<AdminDashboard />} />
         </Routes>
+	<UrlModalBridge />
         <GlobalDialog />
       </main>
     </div>

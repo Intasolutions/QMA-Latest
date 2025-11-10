@@ -12,7 +12,7 @@ export default function EventHighlights() {
 
   useEffect(() => {
     // Fetch latest 10 announcements using fetch
-    fetch("http://15.157.67.144/api/announcements/?page_size=10")
+    fetch("/api/announcements/?page_size=10")
       .then((response) => response.json())
       .then((data) => {
         // If pagination is applied, get `results`

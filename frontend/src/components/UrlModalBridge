@@ -1,0 +1,19 @@
+// src/components/UrlModalBridge.jsx
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import { useDialog } from "./DialogContext";
+
+export default function UrlModalBridge() {
+  const { openDialog } = useDialog();
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === "#register") {
+      openDialog();
+      // Optional: remove the hash so refreshing doesn’t reopen
+      window.history.replaceState(null, "", location.pathname);
+    }
+  }, [location]);
+
+  return null;
+}

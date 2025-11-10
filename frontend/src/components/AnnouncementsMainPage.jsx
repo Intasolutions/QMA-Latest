@@ -11,7 +11,7 @@ export default function AnnouncementsMainPage() {
 
   useEffect(() => {
     // Fetch all announcements
-    fetch("http://15.157.67.144/api/announcements/")
+    fetch("/api/announcements/")
       .then((res) => res.json())
       .then((data) => {
         const items = data.results || data;
