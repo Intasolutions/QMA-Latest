@@ -1,4 +1,4 @@
-# C:\Users\91811\Downloads\canada\api\views.py
+# /srv/qma/api/views.py
 from rest_framework import viewsets, mixins
 from rest_framework.permissions import AllowAny
 from .models import Announcement, GalleryImage
@@ -9,10 +9,19 @@ class ReadOnlyModelViewSet(mixins.ListModelMixin,
                            viewsets.GenericViewSet):
     permission_classes = [AllowAny]
 
+    def get_serializer_context(self):
+        ctx = super().get_serializer_context()
+        ctx["request"] = self.request
+        return ctx
+
 class AnnouncementViewSet(ReadOnlyModelViewSet):
-    queryset = Announcement.objects.order_by('-date')
+    queryset = Announcement.objects.order_by("-date")
     serializer_class = AnnouncementSerializer
 
 class GalleryImageViewSet(ReadOnlyModelViewSet):
-    queryset = GalleryImage.objects.order_by('-id')
+    # Hide entries with empty image so UI has something to render
+    queryset = (GalleryImage.objects
+                .exclude(image__isnull=True)
+                .exclude(image__exact="")
+                .order_by("-id"))
     serializer_class = GalleryImageSerializer

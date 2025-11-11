@@ -1,8 +1,9 @@
 // RegistrationFormDialog.jsx
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
+// Same-origin by default; allow override via Vite env
+const API_BASE = import.meta?.env?.VITE_API_BASE_URL || "";
 
-const API_BASE = "http://127.0.0.1:8000"; // change if needed
 
 export default function RegistrationFormDialog({ onClose }) {
   const dialogRef = useRef(null);
@@ -56,6 +57,7 @@ export default function RegistrationFormDialog({ onClose }) {
       const res = await fetch(`${API_BASE}/api/registrations/`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
+        credentials: "same-origin",
         body: JSON.stringify(payload),
       });
 
